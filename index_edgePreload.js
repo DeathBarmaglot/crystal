@@ -51,7 +51,6 @@ if(document.addEventListener ){
       { load: "index_edge.js"},
       { load: "index_edgeActions.js"}];
 
-
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
 
 loadResources(aLoader, doDelayLoad);

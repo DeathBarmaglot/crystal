@@ -1,5 +1,5 @@
 (function($, Edge, compId){
-//images folder
+
 var im='https://raw.githubusercontent.com/DeathBarmaglot/crystal/main/images/';
 
 var fonts = {};
@@ -78,14 +78,12 @@ var symbols = {
         },
     states: {
         "Base State": {
-            "${_c}": [
-                ["style", "top", '-3px'],
-                ["transform", "scaleY", '0.8'],
-                ["style", "height", '163px'],
-                ["transform", "scaleX", '0.8'],
+            "${__3}": [
+                ["style", "top", '-25px'],
+                ["transform", "scaleY", '0.65'],
+                ["transform", "scaleX", '0.65'],
                 ["style", "opacity", '0'],
-                ["style", "left", '-5px'],
-                ["style", "width", '163px']
+                ["style", "left", '-24px']
             ],
             "${__1}": [
                 ["style", "top", '-25px'],
@@ -96,29 +94,31 @@ var symbols = {
             ],
             "${_li}": [
                 ["style", "top", '-1165px'],
-                ["style", "left", '-938px'],
+                ["style", "clip", [0,2440,2790,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "opacity", '0'],
                 ["style", "background-position", [0,0], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "clip", [0,2440,2790,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+                ["style", "left", '-938px']
             ],
-            "${_a}": [
-                ["style", "top", '-406px'],
-                ["transform", "scaleY", '0.08'],
-                ["transform", "scaleX", '0.08'],
+            "${_c}": [
+                ["style", "top", '-3px'],
+                ["transform", "scaleY", '0.8'],
+                ["transform", "scaleX", '0.8'],
+                ["style", "height", '163px'],
                 ["style", "opacity", '0'],
-                ["style", "left", '-849px']
+                ["style", "left", '-5px'],
+                ["style", "width", '163px']
             ],
             "${_Stage}": [
                 ["color", "background-color", 'rgba(255,255,255,1)'],
-                ["style", "overflow", 'hidden'],
+                ["style", "width", '420px'],
                 ["style", "height", '150px'],
-                ["style", "width", '420px']
+                ["style", "overflow", 'hidden']
             ],
             "${_t}": [
                 ["style", "top", '-108px'],
                 ["transform", "scaleY", '0.07'],
                 ["transform", "scaleX", '0.07'],
-                ["style", "opacity", '0'],
+                ["style", "opacity", '1'],
                 ["style", "left", '-1533px']
             ],
             "${__2}": [
@@ -128,12 +128,12 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '-24px']
             ],
-            "${__3}": [
-                ["style", "top", '-25px'],
-                ["transform", "scaleY", '0.65'],
-                ["transform", "scaleX", '0.65'],
+            "${_a}": [
+                ["style", "top", '-406px'],
+                ["transform", "scaleY", '0.08'],
+                ["transform", "scaleX", '0.08'],
                 ["style", "opacity", '0'],
-                ["style", "left", '-24px']
+                ["style", "left", '-849px']
             ]
         }
     },
@@ -147,19 +147,17 @@ var symbols = {
                 { id: "eid24", tween: [ "style", "${_li}", "background-position", [0,-790], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 5000, duration: 289, easing: "easeInOutCubic" },
                 { id: "eid43", tween: [ "style", "${_c}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 556, easing: "easeInOutCubic" },
                 { id: "eid5", tween: [ "style", "${__3}", "opacity", '1', { fromValue: '0'}], position: 8889, duration: 1011, easing: "easeInOutCubic" },
-                { id: "eid22", tween: [ "style", "${_li}", "opacity", '1', { fromValue: '0'}], position: 2750, duration: 556, easing: "easeInOutCubic" },
+                { id: "eid22", tween: [ "style", "${_li}", "opacity", '1', { fromValue: '0'}], position: 556, duration: 556, easing: "easeInOutCubic" },
                 { id: "eid44", tween: [ "style", "${_li}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 250, easing: "easeInOutCubic" },
                 { id: "eid45", tween: [ "style", "${_li}", "opacity", '1', { fromValue: '0'}], position: 9000, duration: 250, easing: "easeInOutCubic" },
                 { id: "eid34", tween: [ "style", "${_li}", "clip", [1350,2440,2790,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,2440,2790,0]}], position: 8889, duration: 456, easing: "easeInOutCubic" },
                 { id: "eid19", tween: [ "style", "${_a}", "top", '-316px', { fromValue: '-406px'}], position: 0, duration: 200, easing: "easeInOutCubic" },
-                { id: "eid37", tween: [ "style", "${_t}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500, easing: "easeInOutCubic" },
                 { id: "eid41", tween: [ "style", "${_t}", "opacity", '0', { fromValue: '1'}], position: 2500, duration: 500, easing: "easeInOutCubic" },
                 { id: "eid42", tween: [ "style", "${_t}", "opacity", '1', { fromValue: '0'}], position: 9344, duration: 500, easing: "easeInOutCubic" },
                 { id: "eid2", tween: [ "style", "${__2}", "opacity", '1', { fromValue: '0'}], position: 500, duration: 1011, easing: "easeInOutCubic" },
                 { id: "eid3", tween: [ "style", "${__1}", "opacity", '1', { fromValue: '0'}], position: 6500, duration: 645, easing: "easeInOutCubic" },
                 { id: "eid25", tween: [ "style", "${_li}", "top", '-1235px', { fromValue: '-1165px'}], position: 4750, duration: 539, easing: "easeInOutCubic" },
                 { id: "eid32", tween: [ "style", "${_li}", "top", '-1382px', { fromValue: '-1235px'}], position: 8889, duration: 556, easing: "easeInOutCubic" },
-                { id: "eid38", tween: [ "style", "${_t}", "top", '-188px', { fromValue: '-108px'}], position: 0, duration: 1011, easing: "easeInOutCubic" },
                 { id: "eid35", tween: [ "style", "${_t}", "top", '-194px', { fromValue: '-108px'}], position: 9344, duration: 500, easing: "easeInOutCubic" },
                 { id: "eid18", tween: [ "style", "${_a}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 556, easing: "easeInOutCubic" },
                 { id: "eid31", tween: [ "style", "${_a}", "opacity", '0', { fromValue: '1'}], position: 4444, duration: 556, easing: "easeInOutCubic" }            ]
@@ -171,7 +169,9 @@ var symbols = {
 
 Edge.registerCompositionDefn(compId, symbols, fonts, resources, opts);
 
-
+/**
+ * Adobe Edge DOM Ready Event Handler
+ */
 $(window).ready(function() {
      Edge.launchComposition(compId);
 });
